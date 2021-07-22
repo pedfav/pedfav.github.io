@@ -4,9 +4,9 @@
     var apiUrl = 'https://catfact.ninja/fact';
     fetch(apiUrl).then(response => {
       return response.json();
-    }).then(data => {
+    }).then(response => {
       var t = document.getElementById("p");
-      var y = document.createTextNode(data["fact"]);
+      var y = document.createTextNode(response.data.fact);
 
       t.appendChild(y);
 
