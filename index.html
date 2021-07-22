@@ -6,7 +6,7 @@
       return response.json();
     }).then(response => {
       var t = document.getElementById("p");
-      var y = document.createTextNode(response.data.fact);
+      var y = document.createTextNode(response.fact);
 
       t.appendChild(y);
 
